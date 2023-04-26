@@ -1,5 +1,12 @@
 <h1>hola {{ title }}</h1>
 <button (click)="changeTitle()">aver</button>
-
-<app-product [product]="product" *ngFor="let product of products"></app-product>
+<ul>
+    <li>
+        <a routerLink="/products">Products</a>
+    </li>
+    <li>
+        <a routerLink="/contact">Contact</a>
+    </li>
+</ul>
 <!-- ngFor is the angular way to make an iteration -->
+<router-outlet></router-outlet>
